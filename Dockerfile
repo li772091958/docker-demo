@@ -1,4 +1,4 @@
-FROM node:6
+FROM node:slim
 WORKDIR /app
 ADD . /app
 RUN npm install
