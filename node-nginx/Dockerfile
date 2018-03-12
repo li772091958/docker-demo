@@ -25,11 +25,9 @@ RUN yum install gcc-c++ \
 
 # build
 RUN cd ..
-	&& npm install
+	&& npm install \
 	&& npm run build
 
 COPY dist /usr/share/nginx/html
-
-
 
 EXPOSE 80
