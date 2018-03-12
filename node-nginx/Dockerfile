@@ -24,7 +24,7 @@ RUN yum install gcc-c++ \
 	&& make install 
 
 # build
-RUN cd ..
+RUN cd .. \
 	&& npm install \
 	&& npm run build
 
