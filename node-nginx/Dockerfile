@@ -20,7 +20,6 @@ RUN yum install gcc-c++ \
 	&& tar -zxvf nginx-1.13.9.tar.gz \
 	&& cd nginx-1.13.9 \
 	&& ./configure \
-	&& make \
 	&& make install 
 
 # build
