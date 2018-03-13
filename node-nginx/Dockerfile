@@ -6,8 +6,7 @@ WORKDIR /app
 ADD . /app
 
 # build
-RUN cd .. \
-	&& npm install \
+RUN npm install \
 	&& npm run build
 
 COPY dist /usr/share/nginx/html
