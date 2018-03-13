@@ -9,7 +9,7 @@ RUN yum install -y wget \
 	&& xz -d node-v8.9.3-linux-x64.tar.xz \
 	&& tar -xf node-v8.9.3-linux-x64.tar \
 	&& ln -s ~/node-v8.9.3-linux-x64/bin/node /usr/bin/node \
-	&& -s ~/node-v8.9.3-linux-x64/bin/npm /usr/bin/npm
+	&& ln -s ~/node-v8.9.3-linux-x64/bin/npm /usr/bin/npm
 
 # install nginx
 RUN yum install gcc-c++ \
